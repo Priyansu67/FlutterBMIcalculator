@@ -1,0 +1,1 @@
+A simple Body Mass Index(BMI) Calculator application built using Flutter.
