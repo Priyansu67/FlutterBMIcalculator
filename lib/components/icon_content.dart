@@ -10,14 +10,16 @@ class IconContent extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Column(
-      mainAxisAlignment: MainAxisAlignment.center,
+      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
       children: [
-        Icon(
-          icon,
-          size: 60.0,
-          color: Colors.amber,
+        Expanded(
+          child: Icon(
+            icon,
+            size: 60.0,
+            color: Colors.amber,
+          ),
         ),
-        Text('$label', style: kLabelStyle),
+        Expanded(child: Text('$label', style: kLabelStyle)),
       ],
     );
   }
